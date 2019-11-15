@@ -60,9 +60,12 @@ Page({
               })
             } 
             else{
+              var res_gender = res.data.split('"')[5];
+              if (res_gender == "Male") {res_gender="男";}
+              if (res_gender == "Female") {res_gender = "女";}
               that.setData({
                 age: "经AI推测，您的年龄是：" + res.data.split(':')[1].split(',')[0],
-                gender: "经AI推测，您的性别是：" + res.data.split('"')[5], 
+                gender: "经AI推测，您的性别是：" + res_gender, 
               })
             }
           }
