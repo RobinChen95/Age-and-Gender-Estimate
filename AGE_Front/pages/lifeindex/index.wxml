@@ -1,0 +1,15 @@
+ <!--pages/lifeindex/lifeindex/index.wxml-->
+<view class="container">
+<view class="suggestion">
+<text class="title">生活指数</text>
+<view wx:for="{{lifeindex}}" wx:for-index="i" wx:for-item="item"> <view class="list">
+<view class="list_l">
+<image src="../../images/icon/{{i}}.png"></image> <text>{{item.tipt}}</text>
+</view>
+<view class="list_r">
+<text class="list_t">{{item.zs}}</text>
+<text>{{item.des}}</text> </view>
+</view>
+  </view>
+</view>
+  </view>
