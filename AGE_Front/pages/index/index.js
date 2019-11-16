@@ -66,6 +66,7 @@ Page({
               that.setData({
                 age: "经AI推测，您的年龄是：" + res.data.split(':')[1].split(',')[0],
                 gender: "经AI推测，您的性别是：" + res_gender, 
+                reminder:"测试误差在±5岁以内哦o(*￣︶￣*)o",
               })
             }
           }
@@ -73,7 +74,7 @@ Page({
         //-----上传图片-----
       var imgPath = res.tempFilePaths[0];
       that.setData({
-        pic3:imgPath,
+        pic:imgPath,
       })
       }
       
@@ -133,20 +134,15 @@ Page({
         var date = res.data.date;//当天日期
         var curdata = res.data.results[0].weather_data[0].date;//实时日期温度
         var curdate = curdata.substring(0, curdata.indexOf('('));//从实时日期温度取出日期
-        var curtmp = curdata.substring(curdata.indexOf(': ') + 1, curdata.length - 1)//取出温度
-        var pic1 = res.data.results[0].weather_data[0].dayPictureUrl;
-        var pic2 = res.data.results[0].weather_data[0].nightPictureUrl;
         var cast = res.data.results[0].weather_data;//近几天天气预报
-        var forecast = cast.slice(1, cast.length);//近几天天气预报过滤掉今
+        var imgPath = "./Attention.jpg";
         that.setData({//渲染到 wxml 页面 
           date: date,
           weather: weather,
           curdata: curdata,
-          curtmp: curtmp,
           curdate: curdate,
-          pic1: pic1,//变量 pic 内存储的是图片 url 
-          pic2: pic2,
-          forecast: forecast
+          pic: imgPath,
+          author : "robinchen95.com",
         })
         //将变量存到临时数据存储器中
         wx.setStorage({

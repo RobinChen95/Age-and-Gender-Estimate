@@ -1,31 +1,26 @@
 <!--index.wxml-->
 <view class="container"><!--整体布局-->
-<!--今日天气-->
-<view class="nowWeather">
-<view class="city w">{{city}} {{district}}</view> 
-<view class="date w b center">{{curdate}}</view>  <view class = "center">
-<text class = "f50 w b right">{{weather}} </text> <image class="img" src="{{pic1}}"></image> <image class="img" src="{{pic2}}"></image>
+    <view class="nowWeather">
+        <view class="flexs">
+          <view class="left">{{city}} {{district}} </view>
+          <view class="right">{{curdate}}</view>
+        </view>
+        <view class="flexs">
+            <view class="left f40">{{author}} </view>
+            <view class="right">
+              <text class="f30 w b">{{weather}}</text>
+            </view>
+        </view>
     </view>
-  </view>
-<!--今日详细天气-->
-<!-- <view class="weahterDetail">
-<view class="">
-<view class="w center">今日天气</view>
-<view class="w b center f40">{{tmp}}</view> </view>
-<view class="l"></view> <view class="">
-<view class="w center">风向</view>
-<view class="w b center f40">{{wind}}</view> </view>
-<view class="l"></view> <view class="">
-<view class="w center">PM2.5</view>
-<view class="w b center f40">{{pm25}}</view>
-</view>
-</view>  -->
-
-<form><view class="button">
-<button form-type="submit" bindtap='selectPhoto'>点击上传图片</button>
-</view>
-</form>
-<view><image class="touxiang" src="{{pic3}}"></image></view> 
-<view class="w b center displaytext f40">{{age}}</view>
-<view class="w b center displaytext f40">{{gender}}</view>
+    <form>
+        <view class="button">
+            <button form-type="submit" bindtap='selectPhoto'>点击上传照片</button>
+        </view>
+    </form>
+    <view>
+        <image class="touxiang" src="{{pic}}"></image>
     </view>
+    <view class="w b center displaytext f40">{{age}}</view>
+    <view class="w b center displaytext f40">{{gender}}</view>
+    <view class="w b center displaytext f40">{{reminder}}</view>
+</view>

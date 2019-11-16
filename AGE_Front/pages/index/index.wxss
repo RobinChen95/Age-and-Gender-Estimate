@@ -7,6 +7,7 @@ page{
 background-size: 100% 100%; /**背景铺满**/
 }
 /**字体设置**/ /**字体颜色**/
+
 .w{color: white;} /**字体粗细**/
 .b{font-weight: normal;} /**字体大小**/
 .f50{font-size: 50rpx;}
@@ -15,12 +16,12 @@ background-size: 100% 100%; /**背景铺满**/
   border: 1rpx solid #fff;
 }
 /**对齐方式，中间，左，右，两端**/ 
+.flexs{color: white;display: flex;flex-direction: row;  position: relative;}
 .center{text-align: center;margin: auto 0;} 
 .displaytext{margin-top: 20rpx}
-.left{text-align:left;margin: auto 0; } .right{text-align:right;margin: auto 0; } .justify{text-align:justify;margin: auto 0; }
-/**特定格式**/
-.road{height: 80rpx;}/**地址设置**/
-.date{margin:30rpx 30rpx; font-size:40rpx;}/**日期设置**/ .temp{margin:30rpx 30rpx;font-size: 80rpx;}/**今日温度设置**/
+.left{text-align:left;margin: auto 0;flex: 1;display: flex} 
+.right{text-align:right;margin: auto 0; flex-direction: row-reverse} 
+
 /**容器布局**/
 .container {
 position: absolute;/**绝对布局**/ left: 0;
@@ -31,7 +32,6 @@ margin: 0;/**外边距**/
 height: 700rpx;
 display: block; /**块级元素**/
 }
-.hor{display: flex;}
 .nowWeather{padding: 60rpx;} .weahterDetail{
 margin: 0;
 width: 100%;
@@ -41,25 +41,18 @@ justify-content: space-around;/**项目在主轴上的对齐方式,项目两侧�
 **/
   bottom: 50rpx;
 }
-.forcast{
-  margin: 3%;
-  padding: 3%;
-border-bottom: 1rpx solid #eee;/**每个项目的间隔线**/
-justify-content: space-around;/**项目在主轴上的对齐方式,项目两侧间隔相等
-**/
-}
  .img{
-  width: 40rpx;
-  height: 40rpx;
+  width: 30rpx;
+  height: 30rpx;
   margin-top:2%;
   margin-left:2%;
 }
 .touxiang{
-    width: 300rpx;
-  height: 300rpx;
-    margin-top:15%;
-  margin-left: 32%;
-  margin-right: 32%;
+    width: 500rpx;
+  height: 500rpx;
+    margin-top:18%;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 .button{
   width: 400rpx;
