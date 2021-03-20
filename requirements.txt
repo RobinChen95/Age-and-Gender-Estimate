@@ -24,7 +24,7 @@ gyp==0.1
 idna==2.6
 imutils==0.5.3
 itsdangerous==1.1.0
-Jinja2==2.10.3
+Jinja2==2.11.3
 jsonpatch==1.16
 jsonpointer==1.10
 kiwisolver==1.1.0
