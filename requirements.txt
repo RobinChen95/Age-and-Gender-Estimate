@@ -53,7 +53,7 @@ six==1.10.0
 subprocess32==3.5.4
 supervisor==3.2.0
 tensorboard==1.10.0
-tensorflow==1.1.0
+tensorflow==2.5.0
 termcolor==1.1.0
 ttystatus==0.32
 urllib3==1.22
