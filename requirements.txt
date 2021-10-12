@@ -36,7 +36,7 @@ mock==3.0.5
 networkx==2.2
 numpy==1.11.1
 oauth==1.0.1
-opencv-python==3.1.0.0
+opencv-python==4.2.0.32
 Pillow==6.2.1
 prettytable==0.7.2
 protobuf==3.10.0
