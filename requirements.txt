@@ -34,7 +34,7 @@ matplotlib==2.2.2
 meld3==1.0.2
 mock==3.0.5
 networkx==2.2
-numpy==1.11.1
+numpy==1.21.0
 oauth==1.0.1
 opencv-python==3.1.0.0
 Pillow==6.2.1
